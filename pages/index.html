@@ -3,17 +3,59 @@
   <head>
     <title>Jogos do ano</title>
     <meta charset="utf-8">
+    <style>
+      form{
+        display: flex;
+        flex-direction: column;
+      }
+
+    </style>
   </head>
   <body>
-   <header> 
-    <lo>
-        <li>ASTRO BOT</li>
-        <li>Balatro</li>
-        <li>Black Myth: Wukong</li>
-        <li>Elden Ring Shadow of the Erdtree</li>
-        <li>Final Fantasy VII Rebirth</li>
-        <li>Metaphor: ReFantazio</li>
-    </lo>
-   </header>
+    <h1>Premio GOTY</h1>
+    <p>O prêmio GOTY (Game of the Year) é uma das maiores honrarias na indústria dos videogames,
+         concedida ao título que mais se destacou em um determinado ano. Ele celebra conquistas 
+         excepcionais em diversos aspectos, como narrativa, design, jogabilidade, inovação tecnológica
+          e impacto cultural. Embora várias premiações independentes e veículos especializados elejam
+           seus próprios jogos do ano, o The Game Awards é atualmente o evento mais reconhecido globalmente
+            para a entrega do GOTY.
+    </p>
+
+    <p> Além de ser um reconhecimento artístico e técnico, o prêmio GOTY reflete as preferências e tendências da 
+        comunidade gamer e da crítica especializada. Ele também serve como um marco na história dos videogames, 
+        destacando obras que definiram ou redefiniram os padrões da indústria.</p>
+        
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jdr8SFpPs4k?si=ZrUD4ru1lcphZ3dU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <h2>clique e fique por dentro dos jogos que estao concorrendo ao premio esse ano !</h2>
+    <ul>
+        <li><a href="./astrobot.html">ASTRO BOT</a></li>
+        <li><a href="./balatro.html">Balatro</a></li>
+        <li><a href="./wukong.html">Black Myth: Wukong</a></li>
+        <li><a href="./elden.html">Elden Ring Shadow of the Erdtree</a></li>
+        <li><a href="./fantasy.html">Final Fantasy VII Rebirth</a></li>
+        <li><a href="./metalphor.html">Metaphor: ReFantazio</a></li>
+    </ul>
+
+    <form action="/enviar-feedback" method="post">
+      <h2>Formulário de Feedback</h2>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+      <label for="sobrenome">Sobrenome:</label>
+      <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required min="0">
+
+      <label for="jogo">Jogo recomendado:</label>
+      <input type="text" id="jogo" name="jogo" placeholder="Nos recomende um jogo" required>
+
+      <label for="feedback">Feedback sobre o site:</label>
+      <textarea id="feedback" name="feedback" placeholder="Deixe seu feedback" rows="5" required></textarea>
+
+      <button type="submit">Enviar Feedback</button>
+  </form>
   </body>
 </html>
